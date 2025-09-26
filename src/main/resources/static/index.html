@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Blueprints</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+</head>
+
+
+<body>
+
+<div class="container">
+    <div class="page-header text-center">
+        <h1>Gestión de Blueprints</h1>
+    </div>
+
+    <!-- Formulario de captura de autor -->
+    <div class="panel panel-default">
+        <div class="panel-heading"><strong>Consultar planos por autor</strong></div>
+        <div class="panel-body">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="authorInput" class="sr-only">Autor:</label>
+                    <input type="text" class="form-control" id="authorInput" placeholder="Ingrese el autor">
+                </div>
+                <button type="button" id="getBlueprintsBtn" class="btn btn-primary">Get blueprints</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Autor seleccionado -->
+    <div class="alert alert-info">
+        <strong>Autor seleccionado:</strong> <span id="
